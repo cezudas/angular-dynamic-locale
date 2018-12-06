@@ -201,8 +201,8 @@ angular.module('tmh.dynamicLocale', []).config(['$provide', function($provide) {
       this.useStorage('$cookieStore');
     } else {
       this.useStorage('$cookies');
-      storageGet = 'getObject';
-      storagePut = 'putObject';
+      storageGet = 'get';
+      storagePut = 'put';
     }
   };
 
